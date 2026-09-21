@@ -13,6 +13,7 @@ always-reject-url-rewrite = false
 private-ip-answer = false
 hijack-dns = 8.8.8.8:53,8.8.4.4:53,1.1.1.1:53,1.0.0.1:53,9.9.9.9:53,208.67.222.222:53,208.67.220.220:53,223.5.5.5:53,223.6.6.6:53,119.29.29.29:53,114.114.114.114:53
 [Proxy Group]
+苹果智能 = select,🇯🇵JP
 加密货币 = select,🇯🇵JP
 影音平台 = select,🇭🇰HK
 AI = select,🇯🇵JP
@@ -26,6 +27,7 @@ TikTok = select,🇯🇵JP
 🇹🇼TW = url-test,policy-select-name=🇨🇳 TAIWAN 03,interval=300,tolerance=100,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=🇹🇼|TW|TWN|Taiwan|Taipei|taiwan|台湾|台灣|台北|台中|新北|彰化
 🇭🇰HK = url-test,policy-select-name=🇭🇰 HONG KONG 19,interval=300,tolerance=100,timeout=5,url=http://www.gstatic.com/generate_204,policy-regex-filter=🇭🇰|HK|Hong|hong|香港|深港|沪港|京港|港
 [Rule]
+https://raw.githubusercontent.com/AceyDeng/Acey-s-/main/Apple_Intelligence.list,苹果智能,force-remote-dns
 RULE-SET,https://raw.githubusercontent.com/LingJingMaster/Shadowrocket-Rules/refs/heads/main/ApplePush.list,DIRECT
 RULE-SET,https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Shadowrocket/BlockHttpDNS/BlockHttpDNS.list,REJECT
 RULE-SET,https://raw.githubusercontent.com/AceyDeng/Acey-s-/main/Grok_Intelligence.list,AI,force-remote-dns
